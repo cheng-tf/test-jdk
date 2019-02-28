@@ -41,7 +41,7 @@ public class StreamTest {
         // 寻找最长的单词
         Stream<String> stream = Stream.of("I", "love", "you", "too");
         Optional<String> longest =  stream.reduce((s1, s2) -> s1.length() >= s2.length() ? s1 : s2);
-        //Optional<String> longest = stream.max(Comparator.comparingInt(String::length));
+        // Optional<String> longest = stream.max(Comparator.comparingInt(String::length));
         System.out.println(longest.get());
     }
 
@@ -50,7 +50,7 @@ public class StreamTest {
         // 求解单词长度之和
         Stream<String> stream = Stream.of("I", "love", "you", "too");
         Integer longthSum =  stream.reduce(0, (sum, str) -> sum + str.length(), (a, b) -> a+b);
-        //Integer longthSum = stream.mapToInt(String::length).sum();
+        // Integer longthSum = stream.mapToInt(String::length).sum();
         System.out.println(longthSum);
     }
 
