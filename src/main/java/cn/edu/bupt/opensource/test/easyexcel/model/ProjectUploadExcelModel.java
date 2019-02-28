@@ -2,12 +2,14 @@ package cn.edu.bupt.opensource.test.easyexcel.model;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.metadata.BaseRowModel;
+import lombok.Data;
 
 /**
  * 项目模型
  * @author chengtf
  * @date 2019/2/28
  */
+@Data
 public class ProjectUploadExcelModel extends BaseRowModel {
 
     @ExcelProperty(index = 0)
